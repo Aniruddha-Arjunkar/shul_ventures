@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { Routes , Route } from "react-router"
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Layout from './components/Layout.jsx'
+import Home from "./views/Home.jsx";
+import About from "./views/About.jsx";
+import Services from "./views/Services.jsx";
+import Jobs from "./views/Jobs.jsx";
+import Contact from "./views/Contact.jsx";
 
+function App() {
   return (
-    <>     
-        <div className="hero">
-            <h1> Shul Ventures Website</h1>
-         </div>
-    </>
+    <Routes>     
+     <Route path="/" element={<Home />} />
+     <Route path="/about" element={<About />} />
+     <Route path="/services" element={<Services />} />
+     <Route path="/jobs" element={<Jobs />} />
+     <Route path="/contact" element={<Contact />} />
+    </Routes>
   )
 }
 
