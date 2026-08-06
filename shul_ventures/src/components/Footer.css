@@ -1,0 +1,22 @@
+.footer{
+    background-color:black;
+    color:white;
+}
+
+.footer-grid{
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;
+    padding: 50px 100px;
+    
+}
+
+.footer-grid h2,h3{
+    margin-bottom:15px;
+}
+
+.copyright{
+    text-align:center;
+    padding: 5px 0;
+    background-color:#0a121f;
+};

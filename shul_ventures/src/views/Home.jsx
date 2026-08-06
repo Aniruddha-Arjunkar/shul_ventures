@@ -2,34 +2,36 @@ import Hero from "../components/Hero";
 import InquiryForm from "../components/InquiryForm";
 import ServiceCard from "../components/ServiceCard";
 
+import "./Home.css";
+
 function Home() {
   const services = [
     {
-      image: "./../assets/images/image.jpg",
+      image: "/training_card.png",
       title: "Training & Development",
       description:
         "Professional training programs in IT and other domains, with placement support.",
     },
     {
-      image: "./../assets/images/image.jpg",
+      image: "/pest_control_card.png",
       title: "Pest Control",
       description:
-        "Effective pest management solutions ensuring hygiene and safety.",
-    },
+          "Effective pest management solutions ensuring hygiene and safety.",
+    },  
     {
-      image: "../../public/image.jpg",
+      image: "/electric_card.png",
       title: "Electrical Services",
       description:
         "Complete electrical installations, maintenance, and project solutions.",
     },
     {
-      image: "../../public/image.jpg",
+      image: "/solar_card.png",
       title: "Solar Services",
       description:
         "End-to-end solar engineering with design, installation, and maintenance.",
     },
     { 
-      image: "../../public/image.jpg",
+      image: "/placements_card.png",
       title: "Placement",
       description:
         "Job placement assistance focused on matching skills with the right career opportunities.",
@@ -39,11 +41,11 @@ function Home() {
   return (
     <>
       <Hero />
-
+       
       {/* About Company */}
       <section className="about-home-section">
-        <div className="container about-home-grid">
 
+        {/* <div className="container about-home-grid"> */}
           <div className="about-home-content">
             <p className="section-label">
               ABOUT SHUL VENTURES
@@ -70,16 +72,18 @@ function Home() {
               satisfaction, and continuous improvement.
             </p>
 
-            <button className="primary-button">
+            <button className="primary-button" onClick={() => window.location.href = "/about"}>
               Know More
             </button>
           </div>
+        {/* </div> */}
 
-        </div>
+        <InquiryForm />
       </section>
 
       {/* Quick Inquiry */}
-      <InquiryForm />
+      
+     
 
       {/* Services */}
       <section className="services-section">

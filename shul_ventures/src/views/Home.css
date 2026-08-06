@@ -1,0 +1,43 @@
+     
+     /* || About Home Section || */
+ 
+ .about-home-section {
+  padding: 90px 50px;
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+}
+
+/* .about-home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+.about-home-content {
+  max-width: 550px;
+  padding:0  20px;
+}
+
+.section-label {
+  margin-bottom: 12px;
+  color: #e88b00;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.about-home-content h2 {
+  margin-bottom: 25px;
+
+  color: #19283f;
+
+  font-size: 42px;
+}
+
+.about-home-content p {
+  margin-bottom: 18px;
+
+  color: #555;
+
+  line-height: 1.8;
+}

@@ -1,9 +1,10 @@
+import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container footer-grid">
+      <div className="footer-grid">
         <section>
-          <h3>Shul Ventures</h3>
+          <h2>Shul Ventures</h2>
           <p>
             Delivering professional services and practical solutions across
             multiple industries.

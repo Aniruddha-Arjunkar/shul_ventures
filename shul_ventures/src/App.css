@@ -2,75 +2,30 @@
    HERO
 ========================= */
 
-.hero-section {
+/* .hero-section {
   min-height: 600px;
-
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("");
 
   background-position: center;
   background-size: cover;
 
-  color: white;
 }
 
 .hero-overlay {
   min-height: 600px;
-
   display: flex;
   align-items: center;
 }
 
 .hero-content {
   max-width: 750px;
-}
-
-.hero-label {
-  margin-bottom: 15px;
-
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.hero-content h1 {
-  margin-bottom: 10px;
-
-  font-size: clamp(40px, 6vw, 70px);
-  line-height: 1.1;
-}
-
-.hero-content h2 {
-  margin-bottom: 30px;
-
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.hero-button {
-  padding: 14px 30px;
-
-  border: none;
-  border-radius: 4px;
-
-  color: white;
-  background: #e88b00;
-
-  cursor: pointer;
-
-  font-weight: 600;
-}
+} */
 
 
 /* =========================
    ABOUT HOME
 ========================= */
 
-.about-home-section {
+/* .about-home-section {
   padding: 90px 0;
 }
 
@@ -108,7 +63,7 @@
 
   line-height: 1.8;
 }
-
+ */
 
 /* =========================
    BUTTON
@@ -121,7 +76,7 @@
   border-radius: 4px;
 
   color: white;
-  background: #e88b00;
+  background: #2e6af1;
 
   cursor: pointer;
 
@@ -142,7 +97,7 @@
 .section-heading p {
   margin-bottom: 10px;
 
-  color: #e88b00;
+  color: green;
 
   font-size: 14px;
   font-weight: 700;
@@ -168,7 +123,7 @@
 
 .inquiry-section {
   padding: 90px 0;
-
+  width: min(1120px, calc(100% - 40px));
   background: #f5f6f8;
 }
 
