@@ -1,19 +1,19 @@
 import { Outlet } from "react-router";
+import TopBar from "./TopBar.jsx";
+import NavBar from "./NavBar.jsx";
+import Footer from "./Footer.jsx"
 
-import TopBar from "./TopBar";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-
-function Layout(){
-    return (
-       <>
-         <TopBar />
-         <NavBar />
-         <main>
-            <Outlet />
-         </main>
-         <Footer />
-       </>
-    )
+function Layout() {
+  return (
+    <>
+      <TopBar />
+      <NavBar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
 }
-export default Layout
+
+export default Layout;

@@ -11,12 +11,14 @@ import Contact from "./views/Contact.jsx";
 
 function App() {
   return (
-    <Routes>     
-     <Route path="/" element={<Home />} />
-     <Route path="/about" element={<About />} />
-     <Route path="/services" element={<Services />} />
-     <Route path="/jobs" element={<Jobs />} />
-     <Route path="/contact" element={<Contact />} />
+    <Routes> 
+     <Route element={<Layout />}>
+       <Route index element={<Home />} />
+       <Route path="about" element={<About />} />
+       <Route path="services" element={<Services />} />
+       <Route path="jobs" element={<Jobs />} />
+       <Route path="contact" element={<Contact />} />
+     </Route>
     </Routes>
   )
 }

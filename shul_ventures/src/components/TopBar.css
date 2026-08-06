@@ -1,0 +1,30 @@
+.top-bar {
+    background-color: #19283f;
+    color: white;
+    padding: 5px 30px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.social-links img :hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.contact-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
