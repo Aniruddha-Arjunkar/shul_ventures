@@ -181,20 +181,20 @@
 
 .services-section {
   padding: 90px 0;
+  
 }
 
 .services-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(3, 1fr);
-
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .service-card {
   overflow: hidden;
-
+  width: 400px;
   border-radius: 8px;
 
   background: white;

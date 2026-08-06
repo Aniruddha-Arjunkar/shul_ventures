@@ -1,0 +1,109 @@
+
+.job_card {
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 320px;
+  border-radius: 12px;
+  padding: 10px;
+
+  background-color: white;
+
+  box-shadow:
+    0 8px 30px
+    rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  overflow: hidden;
+}
+
+.job_card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 0, 0, 0.12);
+}
+
+.job-details {
+  flex: 1;
+
+  padding: 20px;
+
+  border-radius: 13px;
+  background-color: var(--card-color);
+}
+
+.job-details h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  color: #19283f;
+}
+
+.job-details p {
+  margin: 10px 0;
+
+  line-height: 1.5;
+}
+
+.skills_section {
+  margin-top: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+
+.skill {
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+   color: #242424;
+
+  font-size: 16px;
+
+   background-color: color-mix(
+    in srgb,
+    var(--card-color),
+    black 5%
+     );
+}
+
+.job-footer {
+  padding: 10px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-footer span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job-footer button {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #999;
+  border-radius: 4px;
+
+  background-color: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}

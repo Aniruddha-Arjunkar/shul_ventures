@@ -1,0 +1,37 @@
+.jobs-page{
+  margin:20px auto;
+  width: min(1300px, 90%);
+}
+
+.job-banner {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.job-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.job-list {
+  /* margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; */
+  margin-top: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+}
