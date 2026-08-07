@@ -1,13 +1,17 @@
 .nav-bar {
-  background-color: white(227, 226, 226);
+  background-color:white;
   border-bottom: 5px solid whitesmoke;
+  position:fixed;
+  z-index: 1000;
+  top: 31px;
+  min-height: 60px;
+
 }
 
 .navbar-content {
   width: 100%;
   max-width: 98%;
   min-height: 60px;
-
   display: flex;
   align-items: center;
   justify-content:end;

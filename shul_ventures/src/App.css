@@ -118,13 +118,21 @@
 
 
 /* =========================
-   INQUIRY
+   INQUIRYFORM
 ========================= */
 
 .inquiry-section {
-  padding: 90px 0;
-  width: min(1120px, calc(100% - 40px));
-  background: #f5f6f8;
+  padding: 20px 0;
+  width: min(500px, calc(100% - 40px));
+  background: #f7f7f9;
+  border-radius: 10px;
+  box-shadow:
+    0 8px 15px
+    rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .inquiry-form {
@@ -167,7 +175,7 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #e88b00;
+  border-color: black;
 }
 
 .full-width {
@@ -176,11 +184,11 @@
 
 
 /* =========================
-   SERVICES
+   SERVICES (Home Page)
 ========================= */
 
 .services-section {
-  padding: 90px 0;
+  padding: 50px 0;
   
 }
 
@@ -247,6 +255,12 @@
   line-height: 1.7;
 }
 
+/* =========================
+   Layout.jsx
+========================= */
+.page-content{
+  padding-top:70px;
+}
 
 /* =========================
    RESPONSIVE

@@ -45,7 +45,6 @@ function Home() {
       {/* About Company */}
       <section className="about-home-section">
 
-        {/* <div className="container about-home-grid"> */}
           <div className="about-home-content">
             <p className="section-label">
               ABOUT SHUL VENTURES
@@ -76,7 +75,6 @@ function Home() {
               Know More
             </button>
           </div>
-        {/* </div> */}
 
         <InquiryForm />
       </section>

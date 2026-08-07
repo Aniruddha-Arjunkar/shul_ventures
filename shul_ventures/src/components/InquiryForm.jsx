@@ -51,16 +51,6 @@ function InquiryForm() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="address">Address</label>
-
-            <input
-              id="address"
-              type="text"
-              placeholder="Enter your address"
-            />
-          </div>
-
-          <div className="form-group full-width">
             <label htmlFor="service">Select Service</label>
 
             <select id="service">
@@ -81,6 +71,16 @@ function InquiryForm() {
                 Placement
               </option>
             </select>
+          
+          </div>
+
+          <div className="form-group full-width">
+            <label htmlFor="address">Address</label>
+              <input
+              id="address"
+              type="text"
+              placeholder="Enter your address"
+            />
           </div>
 
           <div className="form-group full-width">
@@ -88,7 +88,7 @@ function InquiryForm() {
 
             <textarea
               id="message"
-              rows="5"
+              rows="4"
               placeholder="Enter your message"
             />
           </div>

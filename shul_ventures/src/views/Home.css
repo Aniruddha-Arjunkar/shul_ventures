@@ -2,10 +2,12 @@
      /* || About Home Section || */
  
  .about-home-section {
-  padding: 90px 50px;
+  padding: 20px 50px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  gap:50px;
+  justify-content: space-around;
+
 }
 
 /* .about-home-grid {
