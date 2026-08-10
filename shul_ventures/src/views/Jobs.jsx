@@ -1,4 +1,4 @@
-import Job from "../assets/images/job_page.jpg";
+import Job from "../assets/images/jobpage-zero-bgimage.png";
 import JobCard from "../components/JobCard";
 
 import "./Jobs.css";
@@ -66,8 +66,10 @@ function Jobs() {
 
   return (
     <section className="jobs-page">
-      <div className="job-banner">
-        <img src={ Job } alt="Job Image"/>
+      <div className="jobpage-hero-section" style={{ backgroundImage: `url(${Job})`}}>
+        <h1 className="jobpage-hero-title">Join Our Team</h1>
+        <div className="blue-line"></div>
+        <p className="jobpage-hero-message">Be a part of our dynamic Team and Build your Career with us.</p>
       </div>
       <div className="job-list">
         {

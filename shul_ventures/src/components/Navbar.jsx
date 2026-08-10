@@ -17,7 +17,7 @@ function NavBar() {
           </NavLink>
 
           <NavLink to="/about" className="nav-link">
-            About
+            About Us
           </NavLink>
 
           <NavLink to="/services" className="nav-link">

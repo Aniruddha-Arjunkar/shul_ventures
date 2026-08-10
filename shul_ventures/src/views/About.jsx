@@ -1,4 +1,6 @@
 import AboutWhoAreWe from "./../assets/images/about-who-are-we.png"
+import HeroImage from "../assets/images/about-zero-image.png"
+
 import "./About.css";
 
 function About() {
@@ -98,7 +100,7 @@ function About() {
   return (
     <main className="about-page">
 
-      {/* ================= HERO ================= */}
+      {/* HERO */}
 
       <section className="about-hero">
 
@@ -147,12 +149,14 @@ function About() {
 
         </div>
 
-        <div className="about-hero-image"></div>
+        <div className="about-hero-image">
+          <img src={HeroImage} alt="hero image" />
+        </div>
 
       </section>
 
 
-      {/* ================= WHO WE ARE ================= */}
+      {/* WHO WE ARE  */}
 
       <section className="who-we-are">
 
@@ -217,7 +221,7 @@ function About() {
       </section>
 
 
-      {/* ================= MISSION / VISION ================= */}
+      {/*  MISSION / VISION  */}
 
       <section className="mission-vision">
 
@@ -274,7 +278,7 @@ function About() {
       </section>
 
 
-      {/* ================= WHY CHOOSE US ================= */}
+      {/*  WHY CHOOSE US  */}
 
       <section className="why-choose-us">
 
@@ -318,7 +322,7 @@ function About() {
       </section>
 
 
-      {/* ================= INDUSTRIES ================= */}
+      {/*  INDUSTRIES */}
 
       <section className="industries-section">
 
@@ -356,7 +360,7 @@ function About() {
       </section>
 
 
-      {/* ================= CORE VALUES ================= */}
+      {/*  CORE VALUES  */}
 
       <section className="values-section">
 
@@ -428,7 +432,7 @@ function About() {
       </section>
 
 
-      {/* ================= BOTTOM STATS ================= */}
+      {/*  BOTTOM STATS  */}
 
       <section className="about-bottom-stats">
 

@@ -95,7 +95,7 @@
 .about-hero-image {
   width: 55%;
 
-  position: absolute;
+  /* position: absolute;
 
   top: 0;
   right: 0;
@@ -108,7 +108,7 @@
       rgba(6, 26, 53, 0.75) 15%,
       rgba(6, 26, 53, 0.1) 60%
     ),
-    url("/src/assets/images/about-office.jpg");
+    url("/src/assets/images/about-office.jpg"); */
 
   background-size: cover;
   background-position: center;
