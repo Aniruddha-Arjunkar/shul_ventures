@@ -1,9 +1,10 @@
 import {useState , useEffect} from "react";
 import Hero1 from "../assets/images/hero1.png";
-import Electric from "../assets/images/electric.png";
-import Solar from "../assets/images/solar.png";
-import Training from "../assets/images/training.png";
-import Pest from "../assets/images/pest_control.png";
+import Training from "../assets/images/hero2.png";
+import Electric from "../assets/images/hero3.png";
+import Pest from "../assets/images/hero4.png";
+import Solar from "../assets/images/hero5.png";
+import Placement from "../assets/images/hero6.png";
 
 
 import "./Hero.css";
@@ -13,7 +14,8 @@ import "./Hero.css";
     Electric,
     Solar,
     Training,
-    Pest  
+    Pest  ,
+    Placement
   ];
 
 function Hero() {

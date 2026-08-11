@@ -102,7 +102,7 @@ function About() {
 
       {/* HERO */}
 
-      <section className="about-hero">
+      {/* <section className="about-hero">
 
         <div className="about-hero-content">
 
@@ -153,7 +153,7 @@ function About() {
           <img src={HeroImage} alt="hero image" />
         </div>
 
-      </section>
+      </section> */}
 
 
       {/* WHO WE ARE  */}

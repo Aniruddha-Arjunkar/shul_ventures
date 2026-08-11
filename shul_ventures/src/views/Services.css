@@ -1,128 +1,301 @@
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
 
 .services-page {
   width: 100%;
-  background-color: #f7f8fa;
-  padding-bottom: 70px;
+  background: #f8fafc;
+  padding-bottom: 90px;
+
+  --primary: #2e6af1;
+  --primary-dark: #1f55c7;
+
+  --navy: #061a35;
+  --text: #18283f;
+  --muted: #64748b;
+
+  --border: #e5eaf1;
+
+  --white: #ffffff;
+
+  --shadow: 0 8px 30px rgba(15, 35, 70, 0.08);
+}
+
+/* =========================================================
+   HERO / ZERO SECTION
+========================================================= */
+
+.services-hero {
+  width: 100%;
+
+  /* background: #ffffff; */
+
+  overflow: hidden;
 }
 
 
-/* -------------
-   PAGE HEADER
------------------ */
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
-.service-page-content {
- width: 100%;
-    min-height: 280px;
+.services-hero-content {
+  width: min(1250px, calc(100% - 40px));
 
-    background: #061a35;
-    color: white;
+  min-height: 350px;
 
-    padding: 10px 30px;
+  margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 45px 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 75px;
 }
 
 
-.service-header-content {
-  width: 50%;
-    padding: 5px 0;
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
 
-    position: relative;
-    z-index: 2;
-    /* max-width: 900px;
-  margin: auto; */
+.services-hero-text {
+  width: 100%;
+
+  max-width: 400px;
+
+  /* position: relative; */
 }
 
-.blue-line {
-  width: 40px;
-  height: 3px;
 
-  margin: 12px 0 20px;
-
-  background: #1260d8;
-}
-
+/* =========================================================
+   LABEL
+========================================================= */
 
 .service-header-label {
   display: inline-block;
 
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 
-  font-size: 13px;
+  color: #2e6af1;
+
+  font-size: 15px;
+
   font-weight: 700;
 
-  letter-spacing: 2px;
-
-  color: #4d96ff;
+  /* letter-spacing: 1.5px; */
 }
 
 
-.service-page-content h1 {
-  /* margin: 0;
+/* =========================================================
+   HEADING
+========================================================= */
 
-  font-size: 48px;
+.services-hero-text h1 {
+  margin: 0;
+/* 
+  color: #061a35; */
+
+  font-size: 40px;
+
   font-weight: 700;
 
-  letter-spacing: -1px; */
+  line-height: 1.2;
+
+  /* letter-spacing: -0.5px; */
+}
+
+
+/* =========================================================
+   BLUE LINE
+========================================================= */
+
+.blue-line {
+  width: 26px;
+
+  height: 3px;
+
+  margin: 11px 0 13px;
+
+  background: #2e6af1;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.services-hero-text p {
+  max-width: 380px;
+
+  margin: 0 0 18px;
+
+  color: #17263d;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.explore-services-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px 15px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #2e6af1;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 12px rgba(46, 106, 241, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.explore-services-btn span {
+  font-size: 15px;
+
+  line-height: 1;
+
+  transition: transform 0.2s ease;
+}
+
+
+.explore-services-btn:hover {
+  background: #245bd0;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(46, 106, 241, 0.3);
+}
+
+
+.explore-services-btn:hover span {
+  transform: translateY(3px);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.services-hero-image-wrapper {
+  width: 90%;
+
+  height: 400px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 10px 25px rgba(20, 40, 70, 0.12);
+}
+
+
+.services-hero-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   EXPERTISE HEADING
+========================================================= */
+
+.expertise-heading {
+  text-align: center;
+
+  max-width: bold;
+
+  margin: 0 auto 40px;
+}
+
+
+.expertise-heading > span {
+  display: block;
+
   margin-bottom: 10px;
 
-  font-size: 42px;
-  line-height: 1.15;
+  color: var(--primary);
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
 }
 
 
-.short-info {
-  /* max-width: 800px;
+.expertise-heading h2 {
+  margin: 0;
 
-  margin: 18px auto 0;
+  color: var(--text);
 
-  font-size: 17px;
+  font-size: clamp(28px, 3vw, 38px);
+
+  line-height: 1.25;
+}
+
+
+.expertise-heading h2 strong {
+  color: var(--primary);
+
+  font-weight: 700;
+}
+
+
+.expertise-heading p {
+  margin: 14px auto 0;
+
+  max-width: 600px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
   line-height: 1.7;
-
-  color: #dbe3ef; */
-
-  margin-bottom: 35px;
-
-  font-size: 18px;
-  line-height: 1.7;
 }
 
-/* .service-zero-image{
-   width: 45%;
-    height: 250px;
 
-    object-fit: cover;
-
-    display: block;
-    margin: 0;
-
-    margin-left: auto;
-} */
-
-.service-zero-image {
-    width: 100%;
-    height: 250px;
-
-    object-fit: cover;
-    display: block;
-}
-
-.service-zero-image-wrapper {
-    width: 45%;
-    height: 250px;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-/* ----------------
+/* =========================================================
    SERVICES LIST
--------------------- */
+========================================================= */
 
 .service-list {
   width: min(1200px, calc(100% - 40px));
@@ -130,30 +303,35 @@
   margin: 55px auto 0;
 
   display: flex;
+
   flex-direction: column;
 
-  gap: 28px;
+  gap: 30px;
 }
 
 
-/* ------------------
+/* =========================================================
    SERVICE CARD
----------------------- */
+========================================================= */
 
 .about-service {
-  display: flex;
+  display: grid;
+
+  grid-template-columns: 300px 1fr;
 
   width: 100%;
+
   min-height: 270px;
 
-  background-color: white;
+  background: var(--white);
 
-  border-radius: 14px;
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
 
   overflow: hidden;
 
-  box-shadow:
-    0 8px 30px rgba(25, 40, 63, 0.08);
+  box-shadow: var(--shadow);
 
   transition:
     transform 0.3s ease,
@@ -161,26 +339,49 @@
 }
 
 
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
 .about-service:hover {
   transform: translateY(-5px);
 
   box-shadow:
-    0 18px 40px rgba(25, 40, 63, 0.14);
+    0 18px 40px rgba(15, 35, 70, 0.13);
 }
 
 
-/* ---------------------
+/* =========================================================
+   ALTERNATE CARD
+========================================================= */
+
+.about-service:nth-child(even) {
+  grid-template-columns: 1fr 300px;
+}
+
+
+/* Move image to right */
+
+.about-service:nth-child(even) .service-image-wrapper {
+  order: 2;
+}
+
+
+/* =========================================================
    IMAGE
--------------------------*/
+========================================================= */
 
 .service-image-wrapper {
-  width: 320px;
+  position: relative;
 
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+
+  min-height: 270px;
 
   overflow: hidden;
 
-  background-color: #e9edf2;
+  background: #e9edf2;
 }
 
 
@@ -192,238 +393,278 @@
 
   display: block;
 
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
+
+/* IMAGE HOVER */
 
 .about-service:hover .service-image {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 
-/* -----------------------
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 26, 53, 0.05),
+      rgba(46, 106, 241, 0.08)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
    SERVICE CONTENT
--------------------------- */
+========================================================= */
 
 .service-details-info {
   position: relative;
 
-  flex: 1;
-
   display: flex;
+
   flex-direction: column;
 
   justify-content: space-between;
 
-  padding: 30px 35px;
+  padding: 32px 38px;
 
-  border-right: 5px solid var(--service-color);
+  background: #ffffff;
 }
 
 
-/* ---------------------
-   TITLE
-------------------------- */
+/* =========================================================
+   CONTENT TOP
+========================================================= */
+
+.service-content-top {
+  width: 100%;
+}
+
+
+/* =========================================================
+   TITLE LINE
+========================================================= */
 
 .service-title-line {
-  width: 45px;
+  width: 34px;
   height: 4px;
 
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+
+  background: var(--primary);
 
   border-radius: 10px;
+
+  transition: width 0.3s ease;
 }
 
+
+/* expand line when hovering */
+
+.about-service:hover .service-title-line {
+  width: 55px;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
 
 .service-info-title {
   margin: 0;
 
-  font-size: 30px;
+  color: var(--text);
+
+  font-size: 27px;
+
   font-weight: 700;
 
-  color: #19283f;
+  line-height: 1.3;
 }
 
 
-/* ---------------------
+/* =========================================================
    DESCRIPTION
-------------------------- */
+========================================================= */
 
 .service-info-desc {
   max-width: 850px;
 
-  margin: 18px 0 25px;
+  margin: 16px 0 25px;
 
-  font-size: 16px;
+  color: var(--muted);
 
-  line-height: 1.7;
+  font-size: 15px;
 
-  color: #53606f;
+  line-height: 1.75;
 }
 
 
-/* --------------
+/* =========================================================
    BUTTON
------------------ */
+========================================================= */
 
 .service-but {
-  align-self: flex-end;
+  /* align-self: flex-end; */
 
-  padding: 11px 22px;
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 20px;
 
   border: none;
-  border-radius: 7px;
 
-  color: white;
+  border-radius: 8px;
 
-  font-size: 15px;
+  background: var(--primary);
+
+  color: #ffffff;
+
+  font-size: 14px;
+
   font-weight: 600;
 
   cursor: pointer;
 
   box-shadow:
-    0 4px 10px rgba(0, 0, 0, 0.12);
+    0 5px 12px rgba(46, 106, 241, 0.22);
 
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    filter 0.2s ease;
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
+
+/* ARROW */
 
 .service-but span {
-  margin-left: 5px;
+  font-size: 17px;
 
-  font-size: 18px;
+  line-height: 1;
+
+  transition: transform 0.25s ease;
 }
 
+
+/* BUTTON HOVER */
 
 .service-but:hover {
+  background: var(--primary-dark);
+
   transform: translateY(-2px);
 
-  filter: brightness(0.92);
-
   box-shadow:
-    0 7px 15px rgba(0, 0, 0, 0.16);
+    0 8px 18px rgba(46, 106, 241, 0.28);
 }
 
+
+.service-but:hover span {
+  transform: translateX(4px);
+}
+
+
+/* BUTTON ACTIVE */
 
 .service-but:active {
   transform: translateY(0);
 }
 
 
-/*----------------------
-   RESPONSIVE - TABLET
------------------------- */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 900px) {
 
+  /* HEADER */
+
   .service-page-content {
     flex-direction: column;
-        padding: 40px 25px;
-        gap: 25px;
+
+    align-items: flex-start;
+
+    padding: 45px 30px;
+
+    gap: 30px;
   }
-  
+
+
   .service-header-content {
-        width: 100%;
+    width: 100%;
+
+    max-width: 700px;
+
+    padding-left: 0;
   }
+
 
   .service-page-content h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
+
+  /* HEADER IMAGE */
+
   .service-zero-image-wrapper {
-        width: 100%;
-        height: 230px;
-    }
+    width: 100%;
 
-    .service-zero-image {
-        height: 230px;
-    }
+    height: 230px;
+  }
 
+
+  .service-zero-image {
+    height: 230px;
+  }
+
+
+  /* SERVICES */
 
   .service-list {
     width: min(700px, calc(100% - 30px));
+
+    margin-top: 45px;
 
     gap: 25px;
   }
 
 
-  .about-service {
+  /* CARDS */
+
+  .about-service,
+  .about-service:nth-child(even) {
+    grid-template-columns: 240px 1fr;
+  }
+
+
+  .about-service:nth-child(even) .service-image-wrapper {
+    order: 2;
+  }
+
+
+  .service-image-wrapper {
     min-height: 250px;
   }
 
 
-  .service-image-wrapper {
-    width: 250px;
-  }
-
-
   .service-details-info {
-    padding: 25px;
-  }
-
-
-  .service-info-title {
-    font-size: 25px;
-  }
-
-}
-
-
-
-/* --------------------
-   RESPONSIVE - MOBILE
-------------------------*/
-
-@media (max-width: 650px) {
-
-  .service-page-content {
-    padding: 40px 18px;
-  }
-
-
-  .service-page-content h1 {
-    font-size: 34px;
-  }
-
-
-  .short-info {
-    font-size: 15px;
-  }
-
-  .service-zero-image-wrapper {
-        height: 200px;
-    }
-
-    .service-zero-image {
-        height: 200px;
-    }
-
-  .service-list {
-    width: calc(100% - 25px);
-
-    margin-top: 35px;
-  }
-
-
-  .about-service {
-    flex-direction: column;
-  }
-
-
-  .service-image-wrapper {
-    width: 100%;
-    height: 220px;
-  }
-
-
-  .service-details-info {
-    padding: 25px;
-
-    border-right: none;
-    border-bottom: 5px solid var(--service-color);
+    padding: 27px;
   }
 
 
@@ -433,14 +674,137 @@
 
 
   .service-info-desc {
-    font-size: 15px;
+    font-size: 14px;
   }
 
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .services-page {
+    padding-bottom: 60px;
+  }
+
+
+  /* HEADER */
+
+  .service-page-content {
+    padding: 40px 18px;
+
+    gap: 25px;
+  }
+
+
+  .service-page-content h1 {
+    font-size: 35px;
+  }
+
+
+  .service-header-label {
+    font-size: 12px;
+
+    letter-spacing: 1.7px;
+  }
+
+
+  .short-info {
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+
+  /* HEADER IMAGE */
+
+  .service-zero-image-wrapper {
+    width: 100%;
+
+    height: 200px;
+  }
+
+
+  .service-zero-image {
+    height: 200px;
+  }
+
+
+  /* SERVICE LIST */
+
+  .service-list {
+    width: calc(100% - 25px);
+
+    margin-top: 35px;
+
+    gap: 22px;
+  }
+
+
+  /* CARD */
+
+  .about-service,
+  .about-service:nth-child(even) {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+
+  /* IMAGE */
+
+  .about-service:nth-child(even) .service-image-wrapper {
+    order: 0;
+  }
+
+
+  .service-image-wrapper {
+    width: 100%;
+
+    height: 220px;
+
+    min-height: 220px;
+  }
+
+
+  /* CONTENT */
+
+  .service-details-info {
+    padding: 25px 22px;
+  }
+
+
+  /* TITLE */
+
+  .service-info-title {
+    font-size: 23px;
+  }
+
+
+  /* DESCRIPTION */
+
+  .service-info-desc {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+  }
+
+
+  /* BUTTON */
 
   .service-but {
     align-self: flex-start;
 
-    margin-top: 10px;
+    margin-top: 5px;
+
+    padding: 10px 18px;
   }
 
 }

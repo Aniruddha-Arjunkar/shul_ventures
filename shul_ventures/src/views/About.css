@@ -95,21 +95,6 @@
 .about-hero-image {
   width: 55%;
 
-  /* position: absolute;
-
-  top: 0;
-  right: 0;
-  bottom: 0;
-
-  background-image:
-    linear-gradient(
-      90deg,
-      #061a35 0%,
-      rgba(6, 26, 53, 0.75) 15%,
-      rgba(6, 26, 53, 0.1) 60%
-    ),
-    url("/src/assets/images/about-office.jpg"); */
-
   background-size: cover;
   background-position: center;
 }
