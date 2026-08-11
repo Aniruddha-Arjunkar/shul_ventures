@@ -247,15 +247,20 @@ function Contact() {
 
       <div className="location-map-section">
 
-        <div className="map">
-
-          {/* Google Map can be added here later */}
-
-          <span>
-            Location Map
-          </span>
-
-        </div>
+        <div className="location-map">
+          <iframe
+            src={`https://www.google.com/maps?q=${encodeURIComponent(
+                 "2nd Floor, Ganesh Apartment, Mankapur Ring Rd, Gumasta Layout, Tatya Tope Nagar, Pratap Nagar, Nagpur, Maharashtra 440015"
+                  )}&output=embed`}
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Shul Ventures Pvt. Ltd. Office Location"
+         ></iframe>
+       </div>
 
       </div>
 
