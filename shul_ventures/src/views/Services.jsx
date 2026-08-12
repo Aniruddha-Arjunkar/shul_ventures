@@ -4,7 +4,7 @@ import ElectricalServices from "../assets/images/electrical-services.png";
 import TrainingDevelopments from "../assets/images/training-development.png";
 import Placements from "../assets/images/placements-services.png";
 
-import ServiceZeroImage from "../assets/images/service-zero-image.png";
+import ServiceHeroImage from "../assets/images/service-hero-image.png";
 
 import "./Services.css";
 
@@ -73,23 +73,25 @@ function Services() {
       <div className="blue-line"></div>
 
       <p>
-        Delivering innovative, reliable and industry-focused
-        solutions across multiple domains.
+        We deliver reliable and innovative solutions across multiple
+        domains, helping businesses and individuals address their
+        unique needs with quality, expertise, and practical results.
+        Our services are designed to create lasting value, improve
+        efficiency, and support sustainable growth.
       </p>
 
       <button
-        className="explore-services-btn"
-        onClick={() => {
-          document
-            .getElementById("services-list")
-            ?.scrollIntoView({
-              behavior: "smooth",
-            });
-        }}
-      >
-        Explore Services
-        <span>↓</span>
-      </button>
+       className="explore-services-btn"
+       onClick={() => {
+       document.getElementById("services-list")?.scrollIntoView({
+       behavior: "smooth",
+       block: "start",
+    });
+  }}
+>
+  Explore Services
+  <span>↓</span>
+</button>
 
     </div>
 
@@ -98,7 +100,7 @@ function Services() {
     <div className="services-hero-image-wrapper">
 
       <img
-        src={ServiceZeroImage}
+        src={ServiceHeroImage}
         alt="Our Services"
         className="services-hero-image"
       />
@@ -113,7 +115,7 @@ function Services() {
           EXPERTISE SECTION
       ====================================================== */}
 
-      <section className="services-expertise">
+      <section className="services-expertise"  id="services-list">
 
         <div className="expertise-heading">
 
