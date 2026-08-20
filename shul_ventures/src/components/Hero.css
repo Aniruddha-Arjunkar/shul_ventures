@@ -4,7 +4,9 @@
 
 .hero-wrapper {
   width: 100%;
+
   margin: 25px 0 30px;
+
   overflow: hidden;
 }
 
@@ -15,37 +17,63 @@
 
 .hero-carousel {
   position: relative;
+
   width: 100%;
+
   overflow: hidden;
 
   padding: 10px 0 55px;
 }
 
+
 /* =========================================
-   SLIDE TRACK
+   HERO TRACK
 ========================================= */
 
 .hero-track {
   width: max-content;
 
   display: flex;
+
   align-items: center;
 
   gap: 20px;
 
   position: relative;
 
-  left: 50%;
+  will-change: transform;
+}
 
+
+/* =========================================
+   SMOOTH ANIMATION
+========================================= */
+
+.hero-track-animated {
   transition:
-    transform 0.9s cubic-bezier(
+    transform 0.9s
+    cubic-bezier(
       0.22,
       1,
       0.36,
       1
     );
+}
 
-  will-change: transform;
+
+/*
+   Used when moving from:
+
+   clone -> real slide
+
+   or
+
+   real slide -> clone
+
+   No animation here.
+*/
+.hero-track-no-transition {
+  transition: none;
 }
 
 
@@ -56,22 +84,37 @@
 .hero-slide {
   flex: 0 0 72vw;
 
+  width: 72vw;
+
   max-width: 1350px;
+
   height: 500px;
 
   background-size: cover;
+
   background-position: center;
+
   background-repeat: no-repeat;
 
   border-radius: 7px;
 
+  flex-shrink: 0;
+
+  position: relative;
+
   opacity: 0.45;
+
   filter: brightness(0.75);
 
   transform: scale(0.88);
 
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.15);
+
   transition:
-    transform 0.9s cubic-bezier(
+    transform 0.9s
+    cubic-bezier(
       0.22,
       1,
       0.36,
@@ -80,12 +123,11 @@
     opacity 0.9s ease,
     filter 0.9s ease,
     box-shadow 0.9s ease;
-
-  flex-shrink: 0;
 }
 
+
 /* =========================================
-   ACTIVE SLIDE
+   ACTIVE / CENTER SLIDE
 ========================================= */
 
 .active-slide {
@@ -98,7 +140,23 @@
   z-index: 2;
 
   box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.20);
+    0 12px 30px
+    rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================
+   SIDE SLIDES
+========================================= */
+
+.side-slide {
+  opacity: 0.45;
+
+  filter: brightness(0.72);
+
+  transform: scale(0.88);
+
+  z-index: 1;
 }
 
 
@@ -120,7 +178,8 @@
 
   border-radius: 50%;
 
-  background: rgba(13, 42, 76, 0.90);
+  background:
+    rgba(13, 42, 76, 0.90);
 
   color: white;
 
@@ -142,6 +201,10 @@
 }
 
 
+/* =========================================
+   ARROW HOVER
+========================================= */
+
 .hero-arrow:hover {
   background: #1265d8;
 
@@ -151,10 +214,18 @@
 }
 
 
+/* =========================================
+   LEFT ARROW
+========================================= */
+
 .hero-arrow-left {
   left: 25px;
 }
 
+
+/* =========================================
+   RIGHT ARROW
+========================================= */
 
 .hero-arrow-right {
   right: 25px;
@@ -162,7 +233,7 @@
 
 
 /* =========================================
-   DOTS
+   DOT CONTAINER
 ========================================= */
 
 .hero-dots {
@@ -184,6 +255,10 @@
 }
 
 
+/* =========================================
+   DOT
+========================================= */
+
 .hero-dot {
   width: 9px;
   height: 9px;
@@ -204,6 +279,10 @@
 }
 
 
+/* =========================================
+   ACTIVE DOT
+========================================= */
+
 .hero-dot.active {
   width: 28px;
 
@@ -221,6 +300,8 @@
 
   .hero-slide {
     flex-basis: 70vw;
+
+    width: 70vw;
 
     height: 450px;
   }
@@ -247,20 +328,33 @@
   .hero-slide {
     flex-basis: 92vw;
 
+    width: 92vw;
+
     max-width: none;
 
     height: 300px;
 
     transform: scale(1);
-
-    opacity: 1;
-
-    filter: none;
   }
 
 
-  .hero-slide:not(.active-slide) {
+  /*
+     Only active slide should be
+     visible on mobile.
+  */
+  .side-slide {
     opacity: 0;
+
+    filter: none;
+
+    transform: scale(1);
+  }
+
+
+  .active-slide {
+    opacity: 1;
+
+    transform: scale(1);
   }
 
 
@@ -303,6 +397,3 @@
   }
 
 }
- 
- 
- 
