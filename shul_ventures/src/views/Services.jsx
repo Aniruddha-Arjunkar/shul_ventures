@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import SolarService from "../assets/images/solar-solutions-services.png";
 import PestControlService from "../assets/images/pest-control-services.png";
 import ElectricalServices from "../assets/images/electrical-services.png";
@@ -8,42 +10,48 @@ import ServiceHeroImage from "../assets/images/service-hero-image.png";
 
 import "./Services.css";
 
+
 function Services() {
   const services_list = [
-    {
-      image: SolarService,
-      title: "Solar Services",
-      description:
-        "We provide reliable and sustainable solar energy solutions designed to help residential, commercial, and industrial customers reduce energy costs and adopt cleaner sources of power. Our solutions are tailored to meet specific energy requirements while focusing on efficiency, performance, and long-term value. From solar system installation and setup to maintenance and performance support, our team helps customers make a smooth transition toward renewable energy.",
-    },
+  {
+    id: "solar",
+    image: SolarService,
+    title: "Solar Services",
+    description:
+      "We provide reliable and sustainable solar energy solutions designed to help residential, commercial, and industrial customers reduce energy costs and adopt cleaner sources of power. Our solutions are tailored to meet specific energy requirements while focusing on efficiency, performance, and long-term value. From solar system installation and setup to maintenance and performance support, our team helps customers make a smooth transition toward renewable energy.",
+  },
 
-    {
-      image: PestControlService,
-      title: "Pest Control Services",
-      description:
-        "We provide professional pest control solutions to help maintain clean, safe, and hygienic residential, commercial, and industrial environments. Our services are designed to address common pest problems effectively while focusing on responsible treatment methods and long-term prevention. From routine preventive services to targeted pest management, we provide solutions tailored to the specific requirements of each property.",
-    },
+  {
+    id: "pest-control",
+    image: PestControlService,
+    title: "Pest Control Services",
+    description:
+      "We provide professional pest control solutions to help maintain clean, safe, and hygienic residential, commercial, and industrial environments. Our services are designed to address common pest problems effectively while focusing on responsible treatment methods and long-term prevention. From routine preventive services to targeted pest management, we provide solutions tailored to the specific requirements of each property.",
+  },
 
-    {
-      image: ElectricalServices,
-      title: "Electrical Services",
-      description:
-        "We provide reliable and professional electrical solutions designed to meet the needs of residential, commercial, and industrial clients. Our services cover electrical installation, maintenance, repair, troubleshooting, and system upgrades, with a strong focus on safety, quality, and efficiency. Our experienced professionals work to ensure that electrical systems are properly installed, maintained, and optimized for dependable performance.",
-    },
+  {
+    id: "electrical",
+    image: ElectricalServices,
+    title: "Electrical Services",
+    description:
+      "We provide reliable and professional electrical solutions designed to meet the needs of residential, commercial, and industrial clients. Our services cover electrical installation, maintenance, repair, troubleshooting, and system upgrades, with a strong focus on safety, quality, and efficiency. Our experienced professionals work to ensure that electrical systems are properly installed, maintained, and optimized for dependable performance.",
+  },
 
-    {
-      image: TrainingDevelopments,
-      title: "Training & Development",
-      description:
-        "We provide industry-oriented training and development programs for both freshers and experienced professionals, designed to build relevant skills, enhance professional capabilities, and support long-term career growth. Our programs combine practical learning, technical knowledge, real-world applications, and professional development to help participants meet evolving industry requirements.",
-    },
+  {
+    id: "training",
+    image: TrainingDevelopments,
+    title: "Training & Development",
+    description:
+      "We provide industry-oriented training and development programs for both freshers and experienced professionals, designed to build relevant skills, enhance professional capabilities, and support long-term career growth. Our programs combine practical learning, technical knowledge, real-world applications, and professional development to help participants meet evolving industry requirements.",
+  },
 
-    {
-      image: Placements,
-      title: "Placement",
-      description:
-        "We connect skilled and aspiring professionals with suitable career opportunities across various industries and domains. Our placement services are designed to understand the requirements of both candidates and employers, helping create meaningful connections between talent and opportunity. We support candidates throughout the recruitment journey, from identifying suitable opportunities and preparing for interviews to connecting them with relevant organizations.",
-    },
+  {
+    id: "placement",
+    image: Placements,
+    title: "Placement",
+    description:
+      "We connect skilled and aspiring professionals with suitable career opportunities across various industries and domains. Our placement services are designed to understand the requirements of both candidates and employers, helping create meaningful connections between talent and opportunity. We support candidates throughout the recruitment journey, from identifying suitable opportunities and preparing for interviews to connecting them with relevant organizations.",
+  }
   ];
 
   return (
@@ -181,15 +189,12 @@ function Services() {
 
                  {/* BUTTON */}
 
-              <button
-                className="service-but"
-                onClick={() => {
-                  window.location.href = "/contact";
-                }}
-              >
+              <Link
+                to={`/services/${service.id}`}
+                className="service-but">
                 Explore Service
                 <span>→</span>
-              </button>
+              </Link>
 
               </div>
 

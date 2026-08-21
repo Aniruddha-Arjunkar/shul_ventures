@@ -1,11 +1,15 @@
-
+import SolarService from "./../assets/images/solar-solutions-services.png";
+import PestControlService from "./../assets/images/pest-control-services.png";
+import ElectricalServices from "./../assets/images/electrical-services.png";
+import TrainingDevelopments from "./../assets/images/training-development.png";
+import Placements from "./../assets/images/placements-services.png";
 
 const ServicesData ={
     solar : {
         id:"solar",
         title:"Solar Services",
         shortTitle:"Solar",
-        image:"",
+        image:SolarService,
         description:"We Provide reliable and Sustainable solar energy solutions designed to help RESIDENTIAL, COMMERCIAL and INDUSTRIAL CUSTOMERS reduce energy cost and adopt cleaner sources of power.",
         whatWeProvide:[
             "Solar Panal Installation",
@@ -38,7 +42,7 @@ const ServicesData ={
         id:"electrical",
         title:"Electrical Services",
         shortTitle:"Electical",
-        image:"",
+        image:ElectricalServices,
         description:"We provide safe, reliable, and professional electrical solutions for residential, commercial, and industrial requirements.",
         whatWeProvide: [
           "Electrical Installation",
@@ -72,7 +76,7 @@ const ServicesData ={
     id: "pest-control",
     title: "Pest Control Services",
     shortTitle: "Pest Control",
-    image:"",
+    image:PestControlService,
     description:"We provide professional pest control solutions to help maintain clean, safe, and hygienic residential, commercial, and industrial environments.",
     whatWeProvide: [
         "Residential Pest Control",
@@ -107,7 +111,7 @@ const ServicesData ={
     id:"training",
     title:"Training & Development",
     shortTitle:"Training",
-    image: "",
+    image: TrainingDevelopments,
     description:"We provide professional training and development programs designed to improve technical skills, professional capabilities, and career readiness.",
     whatWeProvide: [
       "Technical Training",
@@ -141,7 +145,7 @@ const ServicesData ={
     id: "placement",
     title: "Placement Services",
     shortTitle: "Placement",
-    image:"",
+    image:Placements,
     description:"We connect job seekers with suitable career opportunities while helping organizations identify skilled and suitable candidates.",
     whatWeProvide: [
       "Job Placement Assistance",

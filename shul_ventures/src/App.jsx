@@ -9,6 +9,8 @@ import Services from "./views/Services.jsx";
 import Jobs from "./views/Jobs.jsx";
 import Contact from "./views/Contact.jsx";
 
+import ServiceDetails from "./views/Service_Details/serviceDetails.jsx";
+
 function App() {
   return (
     <Routes> 
@@ -18,6 +20,12 @@ function App() {
        <Route path="services" element={<Services />} />
        <Route path="jobs" element={<Jobs />} />
        <Route path="contact" element={<Contact />} />
+       
+        {/* Dynamic Parameter (Thapa Technical Youtube Video)*/}
+       <Route
+          path="/services/:serviceId"
+          element={<ServiceDetails />}/>   
+
      </Route>
     </Routes>
   )
